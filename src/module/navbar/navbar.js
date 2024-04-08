@@ -15,7 +15,6 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const url = pathname;
-  console.log(url);
   const router = useRouter();
 
   const scrollToSection = () => {

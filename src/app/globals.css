@@ -4,12 +4,12 @@
 :root {
   --RobotoFont: "Roboto", sans-serif;
   --QuicksandFont: "Quicksand", sans-serif;
-  --primaryFont1: #000;
-  --priramyFont2: chocolate;
-  --secondaryFont1: #888;
-  --secondaryFont2: #fff;
-  --secondaryFont3: #b41417;
-  --secondaryFont4: #555;
+  --primaryFontColorColor1: #000;
+  --primaryFontColor2: chocolate;
+  --secondaryFontColor1: #888;
+  --secondaryFontColor2: #fff;
+  --secondaryFontColor3: #b41417;
+  --secondaryFontColor4: #555;
   --backgroundColor1: #fefae0;
   --backgroundColor2: #606c38;
   --backgroundColor3: #283618;

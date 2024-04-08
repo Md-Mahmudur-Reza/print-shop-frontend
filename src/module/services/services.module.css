@@ -12,7 +12,7 @@
 }
 
 .serviceTitle {
-  color: var(--priramyFont2);
+  color: var(--primaryFontColor2);
   font-size: 4rem;
   font-family: var(--QuicksandFont);
   display: flex;
@@ -61,13 +61,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: var(--primaryFont1);
+  color: var(--primaryFontColorColor1);
 }
 
 .serviceDescription {
   font-family: var(--RobotoFont);
   font-size: 1.1rem;
-  color: var(--secondaryFont1);
+  color: var(--secondaryFontColor1);
 }
 /* .imageContainer {
   width: 100px; 

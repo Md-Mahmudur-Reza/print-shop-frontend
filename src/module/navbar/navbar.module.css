@@ -22,7 +22,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: var(--secondaryFont2);
+  color: var(--secondaryFontColor2);
 }
 
 .navbarRight {
@@ -51,7 +51,7 @@
 
 .navbarText {
   text-decoration: none;
-  color: var(--secondaryFont2);
+  color: var(--secondaryFontColor2);
   position: relative;
 }
 
@@ -60,7 +60,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background-color: var(--secondaryFont2);
+  background-color: var(--secondaryFontColor2);
   transition: width 0.3s ease;
   position: absolute;
   bottom: -2px;

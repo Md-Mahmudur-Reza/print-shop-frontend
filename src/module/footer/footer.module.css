@@ -23,11 +23,11 @@
   font-family: var(--RobotoFont);
   font-size: 16px;
   line-height: 1.5em;
-  color: var(--secondaryFont4);
+  color: var(--secondaryFontColor4);
   text-align: justify;
 }
 .brown {
-  color: var(--priramyFont2);
+  color: var(--primaryFontColor2);
 }
 
 .section2 {
@@ -52,7 +52,7 @@
   justify-content: space-between;
   font-family: var(--RobotoFont);
   font-size: 16px;
-  color: var(--secondaryFont4);
+  color: var(--secondaryFontColor4);
   /* color: white; */
   margin-bottom: 10px;
 }
@@ -64,7 +64,7 @@
   width: 70%;
   font-family: var(--RobotoFont);
   font-size: 16px;
-  color: var(--secondaryFont4);
+  color: var(--secondaryFontColor4);
   margin-bottom: 10px;
   background-color: red;
   display: flex;
@@ -80,7 +80,7 @@
 .text {
   font-family: var(--RobotoFont);
   font-size: 16px;
-  color: var(--secondaryFont4);
+  color: var(--secondaryFontColor4);
   text-align: justify;
   margin: 10px 0px;
   /* background-color: red; */

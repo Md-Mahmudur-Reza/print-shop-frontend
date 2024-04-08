@@ -1,0 +1,56 @@
+.aboutUs {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-color: var(--backgroundColor1);
+}
+
+.Title {
+  color: var(--primaryFontColor2);
+  font-size: 4rem;
+  font-family: var(--QuicksandFont);
+  margin: 0px;
+  padding: 30px 0px;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.descriptionSection {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.descriptionText {
+  font-family: var(--RobotoFont);
+  font-size: 16px;
+  line-height: 1.5em;
+  color: var(--secondaryFontColor4);
+  text-align: justify;
+  width: 60%;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .Title {
+    font-size: 3rem;
+  }
+  .descriptionSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .descriptionText {
+    width: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+}
