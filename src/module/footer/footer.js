@@ -14,8 +14,8 @@ export default function Footer() {
           Welcome to <span className={styles.brown}>Brown Man Printing</span>{" "}
           Shop, where convenience meets quality just steps away from the
           University of Windsor! Whether you need printing, photocopying,
-          scanning, or professional CV services, we've got you covered at
-          unbeatable prices.
+          scanning, or professional CV writing services, we have got you covered
+          at unbeatable prices.
         </div>
         {/* </div> */}
       </div>

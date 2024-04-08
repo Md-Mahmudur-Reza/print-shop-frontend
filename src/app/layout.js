@@ -8,6 +8,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title key="title">Brown Man Printing</title>
+        <meta
+          name="keywords"
+          key="keywords"
+          content="Printing, Windsor, Brown Man, Brownman, Windsor Printing"
+        />
+        <meta
+          name="description"
+          key="description"
+          content="Welcome to Brown Man Printing"
+        />
+      </head>
       {/* needtofix write proper css */}
       <body style={{ margin: "0px" }}>{children}</body>
     </html>
