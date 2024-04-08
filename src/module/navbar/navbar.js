@@ -2,15 +2,17 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-
-import Link from "next/link";
+import Image from "next/image";
 
 import styles from "./navbar.module.css";
-
+import logo from "../../../public/image/logoWhite.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+  const goHome = () => {
+    router.push("/");
   };
   const pathname = usePathname();
 
@@ -30,9 +32,12 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.navbarLeft}>
-          <a className={styles.navbarBrand} href="/">
-            X
-          </a>
+          <Image
+            onClick={goHome}
+            className={styles.logo}
+            src={logo}
+            alt="logo"
+          />
         </div>
         <div className={`${styles.navbarRight} `}>
           <button
@@ -54,11 +59,11 @@ export default function Navbar() {
                 Services
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className={styles.navbarText}>
                 Location
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/about" className={styles.navbarText}>
                 About Us

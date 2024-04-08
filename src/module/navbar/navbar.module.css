@@ -18,11 +18,10 @@
   align-items: center;
 }
 
-.navbarBrand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--secondaryFontColor2);
+.logo {
+  height: 45px;
+  width: 35px;
+  cursor: pointer;
 }
 
 .navbarRight {
