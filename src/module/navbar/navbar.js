@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 import styles from "./navbar.module.css";
@@ -7,13 +10,21 @@ import styles from "./navbar.module.css";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
-    console.log("pressed");
     setIsOpen(!isOpen);
   };
+  const pathname = usePathname();
+
+  const url = pathname;
+  console.log(url);
+  const router = useRouter();
 
   const scrollToSection = () => {
-    const otherSection = document.getElementById("services");
-    otherSection.scrollIntoView({ behavior: "smooth" });
+    if (pathname == "/") {
+      const otherSection = document.getElementById("services");
+      otherSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push("/#services");
+    }
   };
 
   return (
