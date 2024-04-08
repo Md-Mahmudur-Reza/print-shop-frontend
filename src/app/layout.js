@@ -11,6 +11,10 @@ export default function RootLayout({ children }) {
       <head>
         <title key="title">Brown Man Printing</title>
         <meta
+          name="google-site-verification"
+          content="NThBEf9tAE1YpXNZ7TI7Is41F6bp15dtPL_sSugL1I8"
+        />
+        <meta
           name="keywords"
           key="keywords"
           content="Printing, Windsor, Brown Man, Brownman, Windsor Printing"
