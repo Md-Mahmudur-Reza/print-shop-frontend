@@ -11,6 +11,11 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = () => {
+    const otherSection = document.getElementById("services");
+    otherSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
@@ -35,12 +40,12 @@ export default function Navbar() {
             id="navbarLinks"
           >
             <li>
-              <a href="/services" className={styles.navbarText}>
+              <a onClick={scrollToSection} className={styles.navbarText}>
                 Services
               </a>
             </li>
             <li>
-              <a href="/location" className={styles.navbarText}>
+              <a href="#" className={styles.navbarText}>
                 Location
               </a>
             </li>

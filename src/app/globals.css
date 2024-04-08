@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 :root {
   --RobotoFont: "Roboto", sans-serif;
+  --QuicksandFont: "Quicksand", sans-serif;
+  --primaryFont1: #000;
+  --priramyFont2: chocolate;
+  --secondaryFont1: #888;
+  --secondaryFont2: #fff;
+  --secondaryFont3: #b41417;
+  --backgroundColor1: #fefae0;
+  --backgroundColor2: #606c38;
+  --backgroundColor3: #283618;
+  --backgroundColor4: #ecf39e;
+  /* --backgroundColor5: rgb(252, 252, 110); */
 }

@@ -1,7 +1,5 @@
-/* styles/Navbar.module.css */
-
 .navbar {
-  background-color: #606c38;
+  background-color: var(--backgroundColor2);
   padding: 10px 20px;
   max-height: 40px;
   font-family: var(--RobotoFont);
@@ -24,7 +22,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #cccccc;
+  color: var(--secondaryFont2);
 }
 
 .navbarRight {
@@ -47,13 +45,31 @@
   margin-right: 20px;
 }
 
-.navbarLinks li:last-child {
+/* .navbarLinks li:last-child {
   margin-right: 0;
-}
+} */
 
 .navbarText {
   text-decoration: none;
-  color: #cccccc;
+  color: var(--secondaryFont2);
+  position: relative;
+}
+
+.navbarText::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryFont2);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -2px;
+}
+
+.navbarText:hover::after,
+.navbarText:focus::after,
+.navbarText:active::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -70,9 +86,9 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 40px; /* Adjust this value as needed */
+    top: 40px;
     right: 0%;
-    background-color: #606c38;
+    background-color: var(--backgroundColor2);
     /* padding: 0px 0px; */
     /* z-index: 100; */
     width: 100%;

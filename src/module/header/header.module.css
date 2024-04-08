@@ -1,5 +1,97 @@
-.main {
-  /* background-color: #795548; */
-  height: 100px;
+.header {
+  min-height: calc(100vh - 40px);
+  height: auto;
   width: 100%;
+  background-color: var(--backgroundColor1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the content */
+  /* align-items: center; */
+}
+.notice {
+  top: 0%;
+  font-family: var(--RobotoFont);
+  font-size: 2rem;
+  color: var(--secondaryFont3);
+  background-color: var(--backgroundColor4);
+  position: absolute; /* Ensure proper positioning */
+  animation: moveLeftToRight 15s linear infinite;
+  width: 100%;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    left: -100%; /* Start from outside the viewport on the left */
+  }
+  100% {
+    left: 100%; /* Move to outside the viewport on the right */
+  }
+}
+
+.innerHeader {
+  /* background-color: green; */
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: start; */
+  padding: 1rem;
+}
+
+.brand h1 {
+  color: var(--primaryFont1);
+  font-size: 4rem;
+  font-family: var(--QuicksandFont);
+  margin: 0;
+}
+
+.brandName {
+  color: var(--priramyFont2);
+}
+
+.brand p {
+  margin: 0;
+  color: var(--secondaryFont1);
+  font-family: var(--QuicksandFont);
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* .button {
+  padding: 0.5rem 1rem;
+  background-color: var(--backgroundColor2);
+  color: var(--secondaryFont2);
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: var(--RobotoFont);
+}
+
+.button:hover {
+  background-color: var(--backgroundColor3);
+} */
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: var(--backgroundColor1);
+  color: var(--backgroundColor2);
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid var(--backgroundColor2); /* Border color same as font color */
+  border-radius: 20px; /* Adjust this value to make it more oval */
+  font-family: var(--RobotoFont);
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  border: 2px solid var(--backgroundColor3);
+  color: var(--backgroundColor3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

@@ -1,0 +1,88 @@
+.serviceSection {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  /* background-color: var(--backgroundColor4); */
+  /* background-color: #d8f3dc; */
+  background-color: #e9f5db;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceTitle {
+  color: var(--priramyFont2);
+  font-size: 4rem;
+  font-family: var(--QuicksandFont);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.innerServiceSection {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0px 20px 0px;
+  justify-content: center;
+}
+
+.service {
+  min-height: 300px;
+  max-width: 250px;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--backgroundColor1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px 5px;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.serviceText {
+  text-align: left;
+  /* background-color: red; */
+}
+
+.serviceName {
+  font-family: var(--QuicksandFont);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primaryFont1);
+}
+
+.serviceDescription {
+  font-family: var(--RobotoFont);
+  font-size: 1.1rem;
+  color: var(--secondaryFont1);
+}
+/* .imageContainer {
+  width: 100px; 
+  height: 200px; 
+  overflow: hidden;
+}
+
+.image {
+  width: 100%; 
+  height: 180px; 
+  display: block; 
+} */
+@media (max-width: 768px) {
+  .service {
+    flex-basis: 50%;
+    margin: 20px 5px;
+  }
+}
