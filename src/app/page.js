@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Navbar from "@/module/navbar/navbar";
 import Header from "@/module/header/header";
 import Services from "@/module/services/services";
+import Location from "@/module/location/location";
 import Footer from "@/module/footer/footer";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Services />
+      <Location />
       <Footer />
     </main>
   );

@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import styles from "./navbar.module.css";
 import logo from "../../../public/image/logoWhite.png";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
