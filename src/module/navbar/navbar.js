@@ -20,12 +20,21 @@ export default function Navbar() {
   const url = pathname;
   const router = useRouter();
 
-  const scrollToSection = () => {
+  const scrollToService = () => {
     if (pathname == "/") {
       const otherSection = document.getElementById("services");
       otherSection.scrollIntoView({ behavior: "smooth" });
     } else {
       router.push("/#services");
+    }
+  };
+
+  const scrollToLocation = () => {
+    if (pathname == "/") {
+      const otherSection = document.getElementById("location");
+      otherSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push("/#location");
     }
   };
 
@@ -56,15 +65,15 @@ export default function Navbar() {
             id="navbarLinks"
           >
             <li>
-              <a onClick={scrollToSection} className={styles.navbarText}>
+              <a onClick={scrollToService} className={styles.navbarText}>
                 Services
               </a>
             </li>
-            {/* <li>
-              <a href="#" className={styles.navbarText}>
+            <li>
+              <a onClick={scrollToLocation} className={styles.navbarText}>
                 Location
               </a>
-            </li> */}
+            </li>
             <li>
               <a href="/about" className={styles.navbarText}>
                 About Us

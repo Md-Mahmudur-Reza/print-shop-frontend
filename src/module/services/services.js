@@ -18,9 +18,9 @@ export default function Services() {
           <div className={styles.serviceText}>
             <p className={styles.serviceName}>Printing</p>
             <p className={styles.serviceDescription}>
-              Black & White : 15¢/page
+              Black & White : 20¢/page
             </p>
-            <p className={styles.serviceDescription}>Color : 45¢/page</p>
+            <p className={styles.serviceDescription}>Color : 50¢/page</p>
           </div>
         </div>
         <div className={styles.service}>
@@ -29,9 +29,9 @@ export default function Services() {
           <div className={styles.serviceText}>
             <p className={styles.serviceName}>Copying</p>
             <p className={styles.serviceDescription}>
-              Black & White : 15¢/page
+              Black & White : 20¢/page
             </p>
-            <p className={styles.serviceDescription}>Color : 45¢/page</p>
+            <p className={styles.serviceDescription}>Color : 50¢/page</p>
           </div>
         </div>
         <div className={styles.service}>
