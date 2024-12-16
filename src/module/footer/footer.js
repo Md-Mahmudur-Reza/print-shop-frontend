@@ -23,31 +23,31 @@ export default function Footer() {
         <div className={styles.title}>Hours</div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Saturday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Sunday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Monday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Tuesday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Wednesday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Thursday</div>
-          <div className={styles.time}>7a.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12a.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Friday</div>
-          <div className={styles.time}>7a.m. - 12p.m. | 3p.m. - 11p.m.</div>
+          <div className={styles.time}>6a.m. - 12p.m. | 3p.m. - 12a.m.</div>
         </div>
       </div>
       <div className={styles.section3}>
@@ -60,7 +60,7 @@ export default function Footer() {
           ayonchowdhury1997@gmail.com
         </div>
         <div className={styles.text}>
-          <span className={styles.bold}>Address:</span> 430 Rosedale Ave,
+          <span className={styles.bold}>Address:</span> 567 Chatham Street East,
           Windsor, ON
         </div>
       </div>
