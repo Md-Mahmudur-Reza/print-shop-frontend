@@ -13,8 +13,12 @@ export default function Home() {
       <Navbar />
       <Header />
       <Services />
-      {/* <Location /> */}
+      <Location />
       <Footer />
+      <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLRlZFHfYyUU5Ka6kY1bPsnO-tS8ttEY8"
+  async
+></script>
     </main>
   );
 }

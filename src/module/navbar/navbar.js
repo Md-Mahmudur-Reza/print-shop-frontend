@@ -69,11 +69,11 @@ export default function Navbar() {
                 Services
               </a>
             </li>
-            <li>
+            {/* <li>
               <a onClick={scrollToLocation} className={styles.navbarText}>
                 Location
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/about" className={styles.navbarText}>
                 About Us

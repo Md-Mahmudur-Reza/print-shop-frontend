@@ -1,38 +1,30 @@
-import React, { useEffect, useState } from "react";
-import {
-  GoogleMap,
-  LoadScript,
-  Marker,
-  DirectionsService,
-  DirectionsRenderer,
-} from "@react-google-maps/api";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 
 const MapContainer = ({ location }) => {
-  // const [directions, setDirections] = useState(null);
-  // const [directionsUrl, setDirectionsUrl] = useState("");
+  const mapRef = useRef(null);
 
-  const mapStyles = {
-    height: "400px",
-    width: "100%",
-    borderRadius: "5px",
-    border: "solid  chocolate 2px",
-  };
+  useEffect(() => {
+    if (!window.google) {
+      console.error("Google Maps JavaScript API is not loaded.");
+      return;
+    }
 
-  return (
-    <div>
-      <LoadScript googleMapsApiKey="AIzaSyCLRlZFHfYyUU5Ka6kY1bPsnO-tS8ttEY8">
-        <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={location}>
-          <Marker position={location} />
-          {/* {directions && <DirectionsRenderer directions={directions} />}
-          {directionsUrl && (
-            <a href={directionsUrl} target="_blank" rel="noopener noreferrer">
-              Get Directions
-            </a>
-          )} */}
-        </GoogleMap>
-      </LoadScript>
-    </div>
-  );
+    // Initialize the map
+    const map = new window.google.maps.Map(mapRef.current, {
+      center: location,
+      zoom: 15,
+    });
+
+    // Add a marker
+    new window.google.maps.Marker({
+      position: location,
+      map,
+    });
+  }, [location]);
+
+  return <div ref={mapRef} style={{ width: "100%", height: "400px" }} />;
 };
 
 export default MapContainer;
