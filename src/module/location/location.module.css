@@ -1,0 +1,27 @@
+.location {
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    /* background-color: #d9e5eca8; */
+    /* background-color: #e9f5db; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--primaryFontColor2);
+    font-size: 4rem;
+    font-family: var(--QuicksandFont);
+    margin: 40px auto 0px auto;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-bottom: 40px; */
+}
+
+.map {
+    height: 70vh;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+}
