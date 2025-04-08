@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
+
 
 import logo from "../../../public/image/logoBrown.png";
 import styles from "./footer.module.css";
@@ -60,8 +62,10 @@ export default function Footer() {
           ayonchowdhury1997@gmail.com
         </div>
         <div className={styles.text}>
-          <span className={styles.bold}>Address:</span> 567 Chatham Street East,
-          Windsor, ON
+          <Link href="https://maps.app.goo.gl/Q5Qa76YpNiW4D74B9" className={styles.text}>
+            <span className={styles.bold}>Address:</span> 567 Chatham Street East,
+            Windsor, ON
+          </Link>
         </div>
       </div>
     </footer>

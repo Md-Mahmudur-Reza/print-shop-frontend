@@ -5,16 +5,19 @@
   background-color: var(--backgroundColor1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Horizontally center the content */
+  justify-content: center;
+  /* Horizontally center the content */
   /* align-items: center; */
 }
+
 .notice {
   top: 0%;
   font-family: var(--RobotoFont);
   font-size: 2rem;
   color: var(--secondaryFontColor3);
   background-color: var(--backgroundColor4);
-  position: absolute; /* Ensure proper positioning */
+  position: absolute;
+  /* Ensure proper positioning */
   animation: moveLeftToRight 15s linear infinite;
   width: 100%;
   text-align: center;
@@ -23,10 +26,13 @@
 
 @keyframes moveLeftToRight {
   0% {
-    left: -100%; /* Start from outside the viewport on the left */
+    left: -100%;
+    /* Start from outside the viewport on the left */
   }
+
   100% {
-    left: 100%; /* Move to outside the viewport on the right */
+    left: 100%;
+    /* Move to outside the viewport on the right */
   }
 }
 
@@ -84,10 +90,13 @@
   color: var(--backgroundColor2);
   font-size: 16px;
   text-decoration: none;
-  border: 2px solid var(--backgroundColor2); /* Border color same as font color */
-  border-radius: 20px; /* Adjust this value to make it more oval */
+  border: 2px solid var(--backgroundColor2);
+  /* Border color same as font color */
+  border-radius: 20px;
+  /* Adjust this value to make it more oval */
   font-family: var(--RobotoFont);
   transition: border 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .button:hover {
