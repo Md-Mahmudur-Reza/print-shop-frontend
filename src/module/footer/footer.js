@@ -25,31 +25,31 @@ export default function Footer() {
         <div className={styles.title}>Hours</div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Saturday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>8:00p.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Sunday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>8:00p.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Monday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>8:00p.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Tuesday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>8:00p.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Wednesday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>8:00p.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Thursday</div>
-          <div className={styles.time}>6a.m. - 12a.m.</div>
+          <div className={styles.time}>7a.m. - 11:30p.m.</div>
         </div>
         <div className={styles.hoursSection}>
           <div className={styles.day}>Friday</div>
-          <div className={styles.time}>6a.m. - 12p.m. | 3p.m. - 12a.m.</div>
+          <div className={styles.time}>7a.m. - 11:30p.m. | 3p.m. - 12a.m.</div>
         </div>
       </div>
       <div className={styles.section3}>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
         <div className={styles.text}>
           <Link href="https://maps.app.goo.gl/Q5Qa76YpNiW4D74B9" className={styles.text}>
-            <span className={styles.bold}>Address:</span> 567 Chatham Street East,
+            <span className={styles.bold}>Address:</span> 316 Chippawa St,
             Windsor, ON
           </Link>
         </div>
